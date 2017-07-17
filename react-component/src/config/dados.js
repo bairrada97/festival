@@ -41,34 +41,164 @@ export default [
                               {
                                  url:'https://www.youtube.com/embed/ARu_XbUg8bo?list=PLgIOsBXGzlt0WmCtybqhrAVjZ8RHD0dqe',
                                  musica: 'Cassius'
-                              }
-                              
-
-
-
-
-
-
-
-
-                              ]
+                              }]
 
                     },
                     {
                       nome: 'At The Drive-In',
-                      videos: 'https://www.youtube.com/watch?v=ce0LtolCsLc&list=PLBPQjtB4olU_f12tv70BclyOhVuBrrP1a'
+                      videos: [{ url:'https://www.youtube.com/embed/mSnSryEO3Uo',
+                                 musica: 'No Wolf Like The Present'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/fL4m0LFP1B4',
+                                 musica: 'Continuum'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/UEPo9TNo0fo',
+                                 musica: 'Call Broken Arrow'
+                              },  
+                              {
+                                 url:'https://www.youtube.com/embed/Of-wrBIhi5s',
+                                 musica: 'Holtzclaw'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/raCRIj7yMYk',
+                                 musica: 'Torrentially Cutshaw'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/xs5Ih0kOXgc',
+                                 musica: 'Ghost-Tape No. 9'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/jr_yNcJknBE',
+                                 musica: 'What Went Down'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/zXSzxXW-Cqg',
+                                 musica: 'Pendulum In A Peasant Dress'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/JoNJ6AQhmFY',
+                                 musica: 'Hostage Stamps'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/1-NYWzd7JW8',
+                                 musica: 'Governed by Contagions'
+                              }]
                     },
                     {
                       nome: 'Beach House',
-                      videos: 'https://www.youtube.com/watch?v=RBtlPT23PTM&list=PLjR7x6h301ozi5AiJ_l2tOZWHyAyGPzU_'
+                      videos: [{ url:'https://www.youtube.com/embed/FuvWc3ToDHg?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'MYTH'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/RBtlPT23PTM?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'Space Song'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/OS6duOoxctw?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'WISHES'
+                              },  
+                              {
+                                 url:'https://www.youtube.com/embed/dtmhfA5hrNQ?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'Levitation'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/HeaHW-rUsUQ?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'Walk in the Park'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/NFhJRTdmviA?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'PPP'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/wy5iwc1NwXg?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'Beyond Love'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/tC4jqub6Z_I?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'Lover of Mine'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/N-wfb25WmV4?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'Zebra'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/xIGvqxN--aY?list=RDEMMCCoAPM0eqrOmPfEhIy4AQ',
+                                 musica: 'silver soul'
+                              }]
                     },
                     {
                       nome: 'Nick Murphy',
-                      videos: 'https://www.youtube.com/watch?v=6vopR3ys8Kw&list=PLwOftTG6432aPzvYImpgET_ttoxqkstJ_'
+                      videos: [{ url:'https://www.youtube.com/embed/oNXIwuzHbzg',
+                                 musica: 'Your Time'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/jOcSElqQHwk',
+                                 musica: 'Stop Me'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/4NYRV1q2eUs',
+                                 musica: 'Forget About Me'
+                              },  
+                              {
+                                 url:'https://www.youtube.com/embed/oNXIwuzHbzg',
+                                 musica: 'Your Time'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/HqMG7fn4UbI',
+                                 musica: 'Weak Education'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/IiQyO9gRrL8',
+                                 musica: 'Bye'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/LHztaY69uUo',
+                                 musica: 'I’m Ready'
+                              }]
                     },
                     {
                       nome: 'Future Islands',
-                      videos: 'https://www.youtube.com/watch?v=-5Ae-LhMIG0&list=PL6_mL3l364WbUOEf4Luanr1_TKmKLe3u2'
+                      videos: [{ url:'https://www.youtube.com/embed/MlQunle406U',
+                                 musica: 'Ran'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/-5Ae-LhMIG0',
+                                 musica: 'Seasons'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/d5gUsnJX2oA',
+                                 musica: 'A Dream Of You And Me'
+                              },  
+                              {
+                                 url:'https://www.youtube.com/embed/bvkE9auNyNc',
+                                 musica: 'One Day'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/4S9YtRnlPMk',
+                                 musica: 'Like the Moon'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/g0LJNEQz-E4',
+                                 musica: 'Balance'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/9GhtZt2HYkM',
+                                 musica: 'Tin Man'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/aigN65VmHxI',
+                                 musica: 'Inch of Dust'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/PqtPlm07wAc',
+                                 musica: 'Little Dreamer'
+                              },
+                              {
+                                 url:'https://www.youtube.com/embed/JnbK4iJpTjA',
+                                 musica: 'In the Fall'
+                              }]
                     },
                     {
                       nome: 'King Krules',

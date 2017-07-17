@@ -18,7 +18,7 @@
   font-size: large;
 }
 
-.search{
+.search-music{
   background: transparent;
   border: 0;
   display: inline-block;
@@ -33,17 +33,19 @@
   color: white;
 }
 
-.search::placeholder{
+.search-music::placeholder{
   color: white;
 }
 
 .artistas-container{
-
+  display: flex;
+  justify-content: space-around;
 }
 
-.artistas{
+.artistas-name{
   list-style-type: none;
   font-size: 1em;
+
 }
 
 .artistas__button{

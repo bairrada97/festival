@@ -5,12 +5,15 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-fontawesome": "^1.6.1",
+    "react-icons": "^2.2.5",
     "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pushtogit": "git add .; git commit -m 'default'; git push origin master;"
   }
 }

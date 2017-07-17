@@ -15,7 +15,7 @@
 			                  return  item.artistas.map((artista, indexArtista) => {
 			                      return (
 			                      	
-			                        <li className="artistas">{artista.nome}<button className="artistas__button" onClick={this.props.clicked.bind(this, artista)} ></button></li>
+			                        <li className="artistas-name">{artista.nome}<button className="artistas__button" onClick={this.props.clicked.bind(this, artista)} ></button></li>
 			                      )
 			                  })
 			                

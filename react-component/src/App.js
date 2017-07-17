@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+
 import VideosList from './component/VideosList';
 import ArtistasList from './component/ArtistasList';
 
@@ -18,6 +20,7 @@ class App extends Component {
       titulo: 'Music Player',
       filtro: this.festivais.slice(),
       searchText: "",
+      favoritos: []
     } 
   }
 
@@ -51,6 +54,19 @@ class App extends Component {
     console.log(artista)
   }
 
+  handleFavorite (video) {
+    let videoFavIndex = this.state.favoritos.indexOf(video)
+    let newFavoritos = this.state.favoritos.slice()
+    if(videoFavIndex === -1) {
+      newFavoritos.push(video)
+    }
+    else {
+      newFavoritos.splice(videoFavIndex, 1)
+    } 
+    this.setState ({
+      favoritos: newFavoritos
+    })
+  }
 
   render() {
 
@@ -59,7 +75,7 @@ class App extends Component {
         <div className="App-header">
           <h1> {this.state.titulo} </h1>
           <form>
-            <input className="search" type="text" placeholder="Search" onChange={this.handleChange.bind(this)} />
+            <input className="search-music" type="text" placeholder="Search" onChange={this.handleChange.bind(this)} />
           </form>
         </div>
         <div className="music-container">
@@ -67,6 +83,8 @@ class App extends Component {
             this.state.artistaSelecionado
             ? <VideosList 
               videoList = {this.state.artistaSelecionado.videos} 
+              onFavorite = {this.handleFavorite.bind(this)}
+              favoritos = {this.state.favoritos}
             />
             : this.state.searchText !== ""
               ? <ArtistasList

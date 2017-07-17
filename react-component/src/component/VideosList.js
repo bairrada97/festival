@@ -15,6 +15,8 @@
 			              return( <Video key={"chave" + index}
 			                	video = {video.url}
 			                    musica = {video.musica}
+			                    onFavorite = {() => this.props.onFavorite && this.props.onFavorite(video)}
+			                    isFavorito = {this.props.favoritos.indexOf(video) !== -1}
 			                      />
 			                      
 			                )
@@ -32,6 +34,7 @@
 
 		VideosList.propTypes = {
 			videoList: PropTypes.array.isRequired,
+			onFavorite: PropTypes.func.isRequired
 			
 		}
 
