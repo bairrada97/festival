@@ -1,13 +1,18 @@
 	import React, { Component } from 'react';
 	import PropTypes from 'prop-types';
 		
+import * as FontAwesome from 'react-icons/lib/fa'
 
 const Video = (props) => (
 
-	<div className="video">
+	<div className="video-list">
+	  <div> 
+	  	<h2 className="musica-copy">{props.musica}</h2>
+	  	<span className="favoritos"><a onClick={() => props.onFavorite && props.onFavorite()}>{props.isFavorito ? <FontAwesome.FaHeart /> : <FontAwesome.FaHeartO />} </a></span>
+	  </div>
+	 
 	  <iframe width="196" height="110" src={props.video} frameBorder="0" allowFullScreen></iframe>
-	  <h2 className="musica">{props.musica}</h2>
-	  <span><a onClick={() => props.onFavorite && props.onFavorite()}>Fav</a>{props.isFavorito ? "É Favorito" : "Não é favorito"}</span>
+	  
 	</div>
 )
 

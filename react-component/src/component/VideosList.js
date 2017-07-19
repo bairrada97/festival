@@ -16,7 +16,7 @@
 			                	video = {video.url}
 			                    musica = {video.musica}
 			                    onFavorite = {() => this.props.onFavorite && this.props.onFavorite(video)}
-			                    isFavorito = {this.props.favoritos.indexOf(video) !== -1}
+			                    isFavorito = {this.props.favoritos.indexOf(video.url) !== -1}
 			                      />
 			                      
 			                )

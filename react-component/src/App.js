@@ -20,8 +20,9 @@ class App extends Component {
       titulo: 'Music Player',
       filtro: this.festivais.slice(),
       searchText: "",
-      favoritos: []
+      favoritos: localStorage.getItem('myFavorites') ? JSON.parse(localStorage.getItem('myFavorites')) : []
     } 
+    console.log(JSON.parse(localStorage.getItem('myFavorites')))
   }
 
   handleChange(evt) {
@@ -55,10 +56,10 @@ class App extends Component {
   }
 
   handleFavorite (video) {
-    let videoFavIndex = this.state.favoritos.indexOf(video)
+    let videoFavIndex = this.state.favoritos.indexOf(video.url)
     let newFavoritos = this.state.favoritos.slice()
     if(videoFavIndex === -1) {
-      newFavoritos.push(video)
+      newFavoritos.push(video.url)
     }
     else {
       newFavoritos.splice(videoFavIndex, 1)
@@ -66,6 +67,7 @@ class App extends Component {
     this.setState ({
       favoritos: newFavoritos
     })
+    localStorage.setItem('myFavorites', JSON.stringify(newFavoritos));
   }
 
   render() {
