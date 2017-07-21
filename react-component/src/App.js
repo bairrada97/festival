@@ -6,6 +6,7 @@ import './App.css';
 
 import VideosList from './component/VideosList';
 import ArtistasList from './component/ArtistasList';
+import FavoritesList from './component/FavoritesList';
 
 import festivais from './config/dados';
 
@@ -56,8 +57,8 @@ class App extends Component {
   }
 
   handleFavorite (video) {
-    let videoFavIndex = this.state.favoritos.indexOf(video.url)
     let newFavoritos = this.state.favoritos.slice()
+    let videoFavIndex = newFavoritos.indexOf(video.url)
     if(videoFavIndex === -1) {
       newFavoritos.push(video.url)
     }
@@ -93,7 +94,11 @@ class App extends Component {
                 clicked = {this.handleSelectArtist.bind(this)}
                 filtro = {this.state.filtro}
                 />
-              : null
+              : <FavoritesList 
+                favoritos = {this.state.favoritos}
+                musicas = {this.festivais}
+                onFavorite = {this.handleFavorite.bind(this)}
+                />
           }
         </div>
       </div>

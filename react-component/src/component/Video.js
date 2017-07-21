@@ -7,6 +7,7 @@ const Video = (props) => (
 
 	<div className="video-list">
 	  <div> 
+	  	{props.artista ? <h3 className="artista-copy">{props.artista}</h3> : null}
 	  	<h2 className="musica-copy">{props.musica}</h2>
 	  	<span className="favoritos"><a onClick={() => props.onFavorite && props.onFavorite()}>{props.isFavorito ? <FontAwesome.FaHeart /> : <FontAwesome.FaHeartO />} </a></span>
 	  </div>
@@ -17,6 +18,7 @@ const Video = (props) => (
 )
 
 Video.propTypes = {
+	artista: PropTypes.string,
 	video: PropTypes.string.isRequired,
 	musica: PropTypes.string.isRequired,
 	onFavorite: PropTypes.func.isRequired
